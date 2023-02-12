@@ -28,6 +28,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
   String _selectedRepeat = "None";
   List<String> repeatList = ["None", "Daily", "Weekly", "Monthly"];
   int _selectedColour = 0;
+  final int _isCompleted = 1;
 
   final TaskController _taskController = Get.put(TaskController());
   TextEditingController _titleController = TextEditingController();
@@ -176,7 +177,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
             remind: _selectedRemind,
             repeat: _selectedRepeat,
             color: _selectedColour,
-            isCompleted: 0));
+            isCompleted: _isCompleted));
     print("My id is $value");
   }
 

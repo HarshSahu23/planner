@@ -23,7 +23,9 @@ class Themes {
         titleTextStyle: TextStyle(color: Colors.black)),
     colorScheme: const ColorScheme.light(
         primary: primaryClr,
+        onPrimary: Colors.white,
         brightness: Brightness.light,
+        inversePrimary: darkHeaderClr,
         background: Colors.white),
   );
 
@@ -44,6 +46,7 @@ class Themes {
     colorScheme: ColorScheme.dark(
         primary: darkGreyClr,
         onPrimary: Colors.cyan,
+        inversePrimary: Colors.white,
         // onSurface: Colors.cyan,
         secondary: Colors.grey.shade500,
         onSecondary: bluishClr,
